@@ -1,24 +1,53 @@
-import React, {Fragment} from 'react';
+import React, { useState } from 'react';
 import {
   StyleSheet,
   View,
   Text,
-  StatusBar,
 } from 'react-native';
-import { observer, inject } from 'mobx-react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import {login} from 'App/src/utils/redux/actions/auth';
 
-const Login=inject('auth')(observer((props) => {
+const Login = (props) => {
+  const [count, setCount] = useState(0);
   return (
     <View style={styles.container}>
-      <Text onPress={()=>props.auth.init()}>Login</Text>
+      <Text
+        // onPress={() => setCount(count + 1)}
+        onPress={() =>
+          props.login()
+        }
+        style={styles.text}
+      >
+       Increase Count
+      </Text>
+      <Text
+        style={styles.text}
+      >
+        {/* {count} */}
+        name is
+        { props.name }
+      </Text>
     </View>
   );
-}));
+};
 
-const styles = StyleSheet.create({
-  container:{
-    flex: 1
-  }
+const mapStateToProps = (state) => ({
+  name: 'undefined',
 });
 
-export default Login;
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators({ login }, dispatch);
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  text: {
+    textAlign: 'center',
+    fontSize: 24,
+  },
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login);

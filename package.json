@@ -1,5 +1,5 @@
 {
-  "name": "interestcommunity",
+  "name": "App",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,13 +8,16 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "mobx": "5.9.0",
-    "mobx-react": "5.4.4",
     "react": "16.8.6",
     "react-native": "0.60.5",
     "react-native-gesture-handler": "^1.4.1",
     "react-native-reanimated": "^1.2.0",
-    "react-navigation": "^3.12.1"
+    "react-native-snap-carousel": "^3.8.0",
+    "react-navigation": "^3.12.1",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-promise-middleware": "^6.1.1",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "7.5.5",
@@ -22,6 +25,9 @@
     "@react-native-community/eslint-config": "0.0.3",
     "babel-jest": "24.9.0",
     "eslint": "6.2.2",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-recommended": "^4.0.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
     "jest": "24.9.0",
     "metro-react-native-babel-preset": "0.54.1",
     "react-test-renderer": "16.8.6"

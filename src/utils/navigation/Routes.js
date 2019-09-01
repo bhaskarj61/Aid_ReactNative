@@ -8,28 +8,39 @@ import {
 } from 'react-navigation';
 
 // importing all screens here
-import Login from '../../screens/auth/Login';
+import Login from 'App/src/screens/auth/Login';
+import FirstTimeInstruction from 'App/src/screens/FirstTimeInstructions';
 
-const AuthStack = createStackNavigator({
-    LOGIN: Login,
+const LoadingStack = createStackNavigator({
+  FIRSTTIMELOGIN: FirstTimeInstruction,
 },
 {
-    headerMode: 'none',
-    navigationOptions: {
-      headerVisible: false,
-    }
-}
-);
+  headerMode: 'none',
+  navigationOptions: {
+    headerVisible: false,
+  },
+});
+
+const AuthStack = createStackNavigator({
+  LOGIN: Login,
+},
+{
+  headerMode: 'none',
+  navigationOptions: {
+    headerVisible: false,
+  },
+});
 
 const createRootNavigator = createAppContainer(
   createSwitchNavigator(
     {
-        AuthStack: AuthStack,
+      LoadingStack: LoadingStack,
+      AuthStack: AuthStack,
     },
     {
-      initialRouteName: 'AuthStack'
-    }
-  )
+      initialRouteName: 'LoadingStack',
+    },
+  ),
 );
 
 export default createRootNavigator;
