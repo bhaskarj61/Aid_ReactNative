@@ -3,16 +3,17 @@ import {
   createStackNavigator,
   createSwitchNavigator,
   createAppContainer,
-  createBottomTabNavigator,
-  createDrawerNavigator
+  createDrawerNavigator,
 } from 'react-navigation';
 
 // importing all screens here
 import Login from 'App/src/screens/auth/Login';
-import FirstTimeInstruction from 'App/src/screens/FirstTimeInstructions';
+import Onboarding from 'App/src/screens/Onboarding';
+import Home from 'App/src/screens/home/Home';
+import Drawer from '../../screens/Drawer';
 
 const LoadingStack = createStackNavigator({
-  FIRSTTIMELOGIN: FirstTimeInstruction,
+  ONBOARDING: Onboarding,
 },
 {
   headerMode: 'none',
@@ -31,11 +32,35 @@ const AuthStack = createStackNavigator({
   },
 });
 
+const LoggedInStack = createStackNavigator({
+  HOME: Home,
+},
+{
+  headerMode: 'none',
+  navigationOptions: {
+    headerVisible: false,
+  },
+});
+
+const DrawerStack = createDrawerNavigator({
+  HOME: {
+    screen: Home,
+    navigationOptions: {
+      drawerLabel: () => null,
+    },
+  },
+},
+{
+  contentComponent: props => <Drawer {...props} />,
+});
+
 const createRootNavigator = createAppContainer(
   createSwitchNavigator(
     {
       LoadingStack: LoadingStack,
       AuthStack: AuthStack,
+      DrawerStack: DrawerStack,
+      LoggedInStack: LoggedInStack,
     },
     {
       initialRouteName: 'LoadingStack',

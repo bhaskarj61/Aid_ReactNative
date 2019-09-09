@@ -1,0 +1,360 @@
+
+
+@font-face {
+  font-family: "Austin";
+  src:  url("/fonts/typetoday/AustinCy-Roman-Web.woff2?domain=materialdesignkit.com&md5=VSuNayTTBDSwvHARkM6pAg") format("woff2"),
+        url("/fonts/typetoday/AustinCy-Roman-Web.woff?domain=materialdesignkit.com&md5=Wrx4cKI0S7wRxZJGqn_Hjw") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Austin";
+  src:  url("/fonts/typetoday/AustinCy-Italic-Web.woff2?domain=materialdesignkit.com&md5=pId7iR7HAMjNhmchzLL4dw") format("woff2"),
+        url("/fonts/typetoday/AustinCy-Italic-Web.woff?domain=materialdesignkit.com&md5=E5ktWRo-19Trt3HBW_Vy-Q") format("woff");
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Austin";
+  src:  url("/fonts/typetoday/AustinCy-Semibold-Web.woff2?domain=materialdesignkit.com&md5=Yba-Rrmh7JTDVFyG2_A5MQ") format("woff2"),
+        url("/fonts/typetoday/AustinCy-Semibold-Web.woff?domain=materialdesignkit.com&md5=wqIIutUpsHT9R3h7xMi1-Q") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Austin";
+  src:  url("/fonts/typetoday/AustinCy-Bold-Web.woff2?domain=materialdesignkit.com&md5=9tu1ZRI2O8UfArjZ7X_y2w") format("woff2"),
+        url("/fonts/typetoday/AustinCy-Bold-Web.woff?domain=materialdesignkit.com&md5=ggY6eYc5Lg9hF6W746bkmg") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Austin";
+  src:  url("/fonts/typetoday/AustinCy-Ultra-Web.woff2?domain=materialdesignkit.com&md5=TNXbbad_4cuK_EWRBF-jlw") format("woff2"),
+        url("/fonts/typetoday/AustinCy-Ultra-Web.woff?domain=materialdesignkit.com&md5=rGP9oyrD2xNKUPsnQSx7FQ") format("woff");
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Austin";
+  src:  url("/fonts/typetoday/AustinCy-UltraItalic-Web.woff2?domain=materialdesignkit.com&md5=CWQ05D1sYtISz_0TyMYpEw") format("woff2"),
+        url("/fonts/typetoday/AustinCy-UltraItalic-Web.woff?domain=materialdesignkit.com&md5=Vsn35H9XqCWSGBTbvOFLSg") format("woff");
+  font-style: italic;
+  font-weight: 900;
+}
+
+
+@font-face {
+  font-family: "Dala Floda";
+  src:  url("/fonts/typetoday/DalaFlodaCy-Fat-Web.woff2?domain=materialdesignkit.com&md5=Wf7oa2x1DW04e80aCxv58g") format("woff2"),
+        url("/fonts/typetoday/DalaFlodaCy-Fat-Web.woff?domain=materialdesignkit.com&md5=q2zzzFKG0C1XvrAZ1XKcxA") format("woff");
+  font-style: normal;
+  font-weight: 800;
+}
+
+
+@font-face {
+  font-family: "Druk Condensed";
+  src:  url("/fonts/typetoday/DrukCondCy-Super-Web.woff2?domain=materialdesignkit.com&md5=S60vC-Iy7fsdGnvG67HmNA") format("woff2"),
+        url("/fonts/typetoday/DrukCondCy-Super-Web.woff?domain=materialdesignkit.com&md5=HMR36kO8kM78HgQ-3-f3Zg") format("woff");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Druk Condensed";
+  src:  url("/fonts/typetoday/DrukXCondCy-Super-Web.woff2?domain=materialdesignkit.com&md5=aQzSKvdhiRjHKnCJgicWBg") format("woff2"),
+        url("/fonts/typetoday/DrukXCondCy-Super-Web.woff?domain=materialdesignkit.com&md5=UEOZcB4Tbn76u5WLOp5YJQ") format("woff");
+  font-style: normal;
+  font-weight: 900;
+}
+
+
+@font-face {
+  font-family: "Druk Wide";
+  src:  url("/fonts/typetoday/DrukWideCy-Bold-Web.woff2?domain=materialdesignkit.com&md5=7pDcSu72vLCHtFo-laZLaw") format("woff2"),
+        url("/fonts/typetoday/DrukWideCy-Bold-Web.woff?domain=materialdesignkit.com&md5=PwbpQZMiXL9JMLuVIM_C3g") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Druk Wide";
+  src:  url("/fonts/typetoday/DrukWideCy-Super-Web.woff2?domain=materialdesignkit.com&md5=F_HKqSCokvtF9KkFpnr0pw") format("woff2"),
+        url("/fonts/typetoday/DrukWideCy-Super-Web.woff?domain=materialdesignkit.com&md5=1wmBBoxewh3A6FdCEnHCig") format("woff");
+  font-style: normal;
+  font-weight: 900;
+}
+
+
+@font-face {
+  font-family: "Giorgio Sans";
+  src:  url("/fonts/typetoday/GiorgioSansLC-Thin-Web.woff2?domain=materialdesignkit.com&md5=JeQPn6qRwJXZSy4bTM__vQ") format("woff2"),
+        url("/fonts/typetoday/GiorgioSansLC-Thin-Web.woff?domain=materialdesignkit.com&md5=q-t_Cwobfl7oCEZhQ13O3w") format("woff");
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Giorgio Sans";
+  src:  url("/fonts/typetoday/GiorgioSansLC-Regular-Web.woff2?domain=materialdesignkit.com&md5=XV0o6xjeVK39KL3rMLnWUQ") format("woff2"),
+        url("/fonts/typetoday/GiorgioSansLC-Regular-Web.woff?domain=materialdesignkit.com&md5=8P9AQsDp9tCObJlWXKOGZw") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Giorgio Sans";
+  src:  url("/fonts/typetoday/GiorgioSansLC-RegularItalic-Web.woff2?domain=materialdesignkit.com&md5=Wfx3QO574kt7HC9uq4bssA") format("woff2"),
+        url("/fonts/typetoday/GiorgioSansLC-RegularItalic-Web.woff?domain=materialdesignkit.com&md5=Rfc9_dqumpOTC1OVkNEDig") format("woff");
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Giorgio Sans";
+  src:  url("/fonts/typetoday/GiorgioSansLC-Medium-Web.woff2?domain=materialdesignkit.com&md5=9T2sPf3G22_VSvhMrbLpZA") format("woff2"),
+        url("/fonts/typetoday/GiorgioSansLC-Medium-Web.woff?domain=materialdesignkit.com&md5=ULPRhleZry8Ekqg9yvraIQ") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Giorgio Sans";
+  src:  url("/fonts/typetoday/GiorgioSansLC-Bold-Web.woff2?domain=materialdesignkit.com&md5=vMXJlCRTTFsI6FsCC4vwEw") format("woff2"),
+        url("/fonts/typetoday/GiorgioSansLC-Bold-Web.woff?domain=materialdesignkit.com&md5=GEhtNHdDLIjh0apfcYnfqw") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Giorgio Sans";
+  src:  url("/fonts/typetoday/GiorgioSansLC-BoldItalic-Web.woff2?domain=materialdesignkit.com&md5=NjHLjEOoX4F6uGh9ccOpRA") format("woff2"),
+        url("/fonts/typetoday/GiorgioSansLC-BoldItalic-Web.woff?domain=materialdesignkit.com&md5=ACmNYPJguvgP7fc6EI9Lng") format("woff");
+  font-style: italic;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Giorgio Sans";
+  src:  url("/fonts/typetoday/GiorgioSansLC-Heavy-Web.woff2?domain=materialdesignkit.com&md5=MZAn5Pv71v9TBVxKMSi9CQ") format("woff2"),
+        url("/fonts/typetoday/GiorgioSansLC-Heavy-Web.woff?domain=materialdesignkit.com&md5=nt3xYXnbIXfYBJ6Ft7PSWg") format("woff");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Giorgio Sans";
+  src:  url("/fonts/typetoday/GiorgioSansLC-Black-Web.woff2?domain=materialdesignkit.com&md5=Y_kioLbVJ--krBgqSFJL9A") format("woff2"),
+        url("/fonts/typetoday/GiorgioSansLC-Black-Web.woff?domain=materialdesignkit.com&md5=fTJVqMzjC5rEcuD97rt-1Q") format("woff");
+  font-style: normal;
+  font-weight: 900;
+}
+
+
+@font-face {
+  font-family: "Graphik";
+  src:  url("/fonts/typetoday/GraphikLC-Thin-Web.woff2?domain=materialdesignkit.com&md5=Urt6TJ86X-k0E4gfYwhKUA") format("woff2"),
+        url("/fonts/typetoday/GraphikLC-Thin-Web.woff?domain=materialdesignkit.com&md5=c2eVIMvPdWfwawO0vWeUKw") format("woff");
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Graphik";
+  src:  url("/fonts/typetoday/GraphikLC-Light-Web.woff2?domain=materialdesignkit.com&md5=i0TU9akLuj3bEt0dsGsTnA") format("woff2"),
+        url("/fonts/typetoday/GraphikLC-Light-Web.woff?domain=materialdesignkit.com&md5=vbEA3LQJ0DbTt9AsDJ8l7w") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Graphik";
+  src:  url("/fonts/typetoday/GraphikLC-Regular-Web.woff2?domain=materialdesignkit.com&md5=y4VFEn63ne1Qva31NFfVDQ") format("woff2"),
+        url("/fonts/typetoday/GraphikLC-Regular-Web.woff?domain=materialdesignkit.com&md5=TXNPdtFnsrWiQ30pUP4Fzw") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Graphik";
+  src:  url("/fonts/typetoday/GraphikLC-RegularItalic-Web.woff2?domain=materialdesignkit.com&md5=0kILRRk6cRp-ku0P71_iww") format("woff2"),
+        url("/fonts/typetoday/GraphikLC-RegularItalic-Web.woff?domain=materialdesignkit.com&md5=xHheTuq1cWo1JYmVdjsqmg") format("woff");
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Graphik";
+  src:  url("/fonts/typetoday/GraphikLC-Medium-Web.woff2?domain=materialdesignkit.com&md5=77vPbcAo6O2w0lFD7WJbXw") format("woff2"),
+        url("/fonts/typetoday/GraphikLC-Medium-Web.woff?domain=materialdesignkit.com&md5=ksGI2BqBWwv4pPyJ9b2OyA") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Graphik";
+  src:  url("/fonts/typetoday/GraphikLC-Bold-Web.woff2?domain=materialdesignkit.com&md5=rH6LrObLGfh8t6EAOKNqtg") format("woff2"),
+        url("/fonts/typetoday/GraphikLC-Bold-Web.woff?domain=materialdesignkit.com&md5=1N0LasWyVLwIOC1-pDHAwQ") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Graphik";
+  src:  url("/fonts/typetoday/GraphikLC-BoldItalic-Web.woff2?domain=materialdesignkit.com&md5=--jpgGlCxgYRzVLjsi1PSg") format("woff2"),
+        url("/fonts/typetoday/GraphikLC-BoldItalic-Web.woff?domain=materialdesignkit.com&md5=j8K2njaW06T9ABRYSHlVqQ") format("woff");
+  font-style: italic;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Graphik";
+  src:  url("/fonts/typetoday/GraphikLC-Black-Web.woff2?domain=materialdesignkit.com&md5=YhUUJi118ZH-jvZhu4KrAg") format("woff2"),
+        url("/fonts/typetoday/GraphikLC-Black-Web.woff?domain=materialdesignkit.com&md5=4VmpISlmx3R0_GrpSz3zvQ") format("woff");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Graphik";
+  src:  url("/fonts/typetoday/GraphikLC-Super-Web.woff2?domain=materialdesignkit.com&md5=7Vj-3bpsAOnWA38QUjEAaQ") format("woff2"),
+        url("/fonts/typetoday/GraphikLC-Super-Web.woff?domain=materialdesignkit.com&md5=1VXwZ2HxVlmmMUT5Bz9VWA") format("woff");
+  font-style: normal;
+  font-weight: 900;
+}
+
+
+@font-face {
+  font-family: "Kazimir";
+  src:  url("/fonts/typetoday/Kazimir-Web-Regular.woff2?domain=materialdesignkit.com&md5=d29YR3HuOx4LYcnU7LN6lQ") format("woff2"),
+        url("/fonts/typetoday/Kazimir-Web-Regular.woff?domain=materialdesignkit.com&md5=gTXr-cYz6_en-XgJw_BZvw") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Kazimir";
+  src:  url("/fonts/typetoday/Kazimir-Web-Medium.woff2?domain=materialdesignkit.com&md5=BRODHwF0fuIqfUxvSZwnlg") format("woff2"),
+        url("/fonts/typetoday/Kazimir-Web-Medium.woff?domain=materialdesignkit.com&md5=4NLahNCuZKVr0re6G8bBbQ") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Kazimir";
+  src:  url("/fonts/typetoday/Kazimir-Web-Bold.woff2?domain=materialdesignkit.com&md5=AjAocjdSY3QwDawu4FR_ZA") format("woff2"),
+        url("/fonts/typetoday/Kazimir-Web-Bold.woff?domain=materialdesignkit.com&md5=lSyMeitiRysj-kaQCHO4zw") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Kazimir";
+  src:  url("/fonts/typetoday/Kazimir-Web-Black.woff2?domain=materialdesignkit.com&md5=FhARzWxKuqp_IejgyD8nvQ") format("woff2"),
+        url("/fonts/typetoday/Kazimir-Web-Black.woff?domain=materialdesignkit.com&md5=QzZPLAMcpzxkNrlGq9Rn9g") format("woff");
+  font-style: normal;
+  font-weight: 900;
+}
+
+
+@font-face {
+  font-family: "Kazimir Text";
+  src:  url("/fonts/typetoday/KazimirText-Hairline_web.woff2?domain=materialdesignkit.com&md5=kzGCKNwCvXpCQT95EA7Ifw") format("woff2"),
+        url("/fonts/typetoday/KazimirText-Hairline_web.woff?domain=materialdesignkit.com&md5=794TFD7ry-9qb_D6mRZXqg") format("woff");
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Kazimir Text";
+  src:  url("/fonts/typetoday/KazimirText-Book_web.woff2?domain=materialdesignkit.com&md5=n4pWlOUz2LUo_ZnOjxepNg") format("woff2"),
+        url("/fonts/typetoday/KazimirText-Book_web.woff?domain=materialdesignkit.com&md5=DprR7BaDWwpEWqxZOjujew") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Kazimir Text";
+  src:  url("/fonts/typetoday/KazimirText-Regular_web.woff2?domain=materialdesignkit.com&md5=yWXs4qZUQDzZ-_iu4YAuPg") format("woff2"),
+        url("/fonts/typetoday/KazimirText-Regular_web.woff?domain=materialdesignkit.com&md5=aF_amiSQPFL0520aOm1vyw") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Kazimir Text";
+  src:  url("/fonts/typetoday/KazimirText-Bold_web.woff2?domain=materialdesignkit.com&md5=mmEvTrw2i-T_PHj4UkBIlA") format("woff2"),
+        url("/fonts/typetoday/KazimirText-Bold_web.woff?domain=materialdesignkit.com&md5=oWMh43zRACG8lSPj7Itjbw") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: "Karloff Negative";
+  src:  url("/fonts/typetoday/KarloffNegativePro-Web-Regular.woff2?domain=materialdesignkit.com&md5=YOA2EUZzt5chCD7zA0blrQ") format("woff2"),
+        url("/fonts/typetoday/KarloffNegativePro-Web-Regular.woff?domain=materialdesignkit.com&md5=jgp9pMIXv6s6C9B87XpSIg") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Karloff Negative";
+  src:  url("/fonts/typetoday/KarloffNegativePro-Web-Bold.woff2?domain=materialdesignkit.com&md5=JalEuuPyu4uxyHMxh3pwcA") format("woff2"),
+        url("/fonts/typetoday/KarloffNegativePro-Web-Bold.woff?domain=materialdesignkit.com&md5=KC-nNAI3YsRAxA-rA4azvQ") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: "Marlene";
+  src:  url("/fonts/typetoday/MarleneCy-Web-Light.woff2?domain=materialdesignkit.com&md5=U-IH4bhwSS37gtOmJxhxzA") format("woff2"),
+        url("/fonts/typetoday/MarleneCy-Web-Light.woff?domain=materialdesignkit.com&md5=AklJxO94CBVP8NHE1DiRXg") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Marlene";
+  src:  url("/fonts/typetoday/MarleneCy-Web-Bold.woff2?domain=materialdesignkit.com&md5=GPH3-xXdVWARlRZJ11v5qg") format("woff2"),
+        url("/fonts/typetoday/MarleneCy-Web-Bold.woff?domain=materialdesignkit.com&md5=Omq0SbrJ9aOw33BotzoltA") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: "NWT Bodoni";
+  src:  url("/fonts/typetoday/NWT_Bodoni-Regular-Web.woff?domain=materialdesignkit.com&md5=rCUihaMrlrwuNgE6DoJrcQ") format("woff"),
+        url("/fonts/typetoday/NWT_Bodoni-Regular-Web.woff?domain=materialdesignkit.com&md5=rCUihaMrlrwuNgE6DoJrcQ") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "NWT Bodoni";
+  src:  url("/fonts/typetoday/NWT_Bodoni-Italic-Web.woff2?domain=materialdesignkit.com&md5=VP19gcEWmfTDK8sijc7npA") format("woff2"),
+        url("/fonts/typetoday/NWT_Bodoni-Italic-Web.woff?domain=materialdesignkit.com&md5=oFDsEsCI8ucivA8DDGW4jQ") format("woff");
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "NWT Bodoni";
+  src:  url("/fonts/typetoday/NWT_Bodoni-Bold-Web.woff2?domain=materialdesignkit.com&md5=ho0oPp88EeawZZuUXH9DdA") format("woff2"),
+        url("/fonts/typetoday/NWT_Bodoni-Bold-Web.woff?domain=materialdesignkit.com&md5=DnlfBFyweWnolrBJU7IhOw") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: "Stratos";
+  src:  url("/fonts/typetoday/StratosLC-Web-Light.woff2?domain=materialdesignkit.com&md5=x5eMhBnTFlf88vlKnwprmQ") format("woff2"),
+        url("/fonts/typetoday/StratosLC-Web-Light.woff?domain=materialdesignkit.com&md5=IptWJGZWveQ6wPKyYOcIEQ") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Stratos";
+  src:  url("/fonts/typetoday/StratosLC-Web-Regular.woff2?domain=materialdesignkit.com&md5=Nzg0WMyIUopSRSKyblbf_A") format("woff2"),
+        url("/fonts/typetoday/StratosLC-Web-Regular.woff?domain=materialdesignkit.com&md5=ExiJXIX35llSQWIVBpFztw") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Stratos";
+  src:  url("/fonts/typetoday/StratosLC-Web-Italic.woff2?domain=materialdesignkit.com&md5=vhry01yhiy3P1yXQe8d5YA") format("woff2"),
+        url("/fonts/typetoday/StratosLC-Web-Italic.woff?domain=materialdesignkit.com&md5=2Nh3MN6CgmusHnnyMpfbSw") format("woff");
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Stratos";
+  src:  url("/fonts/typetoday/StratosLC-Web-Medium.woff2?domain=materialdesignkit.com&md5=UGDgFRgAR6bEJozt358pmQ") format("woff2"),
+        url("/fonts/typetoday/StratosLC-Web-Medium.woff?domain=materialdesignkit.com&md5=1xmMlMZZ1WaOwUQTWE1uZg") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Stratos";
+  src:  url("/fonts/typetoday/StratosLC-Web-Bold.woff2?domain=materialdesignkit.com&md5=8BbP2jwvz7C2wcJdjKV7SQ") format("woff2"),
+        url("/fonts/typetoday/StratosLC-Web-Bold.woff?domain=materialdesignkit.com&md5=9K2M2dbU1-9Yva2IeDG11A") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}

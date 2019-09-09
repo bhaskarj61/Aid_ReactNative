@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "907973876829",
+    "firebase_url": "https://aid-app-3b104.firebaseio.com",
+    "project_id": "aid-app-3b104",
+    "storage_bucket": "aid-app-3b104.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907973876829:android:b97671a63ab103a3",
+        "android_client_info": {
+          "package_name": "com.interestcommunity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907973876829-ain6ivut3udm04o94nptc3njdku5o7d5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEn4A17xBEHt4fMl9QW8QQD5RpBgWH_Jo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907973876829-ain6ivut3udm04o94nptc3njdku5o7d5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
