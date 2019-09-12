@@ -3,7 +3,6 @@ import {
   StyleSheet,
   View,
   Text,
-  Dimensions,
 } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -16,12 +15,11 @@ import {
 } from 'react-native-paper';
 import THEME from 'App/src/utils/constants/Theme';
 
-const { height, width } = Dimensions.get('window');
 const instructions = 'You are just a step away from connecting with people';
 const placeholderPhone = 'Please Enter Your Mobile Number';
 const placeholderPassword = 'Please Enter Your Password';
 
-const Login = (props) => {
+const SignUp = (props) => {
   const [phone, setPhone] = useState(0);
 
   const onPressLogin = () => {
@@ -109,4 +107,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Login);
+export default connect(mapStateToProps, mapDispatchToProps)(SignUp);

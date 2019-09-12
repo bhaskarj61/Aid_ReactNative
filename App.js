@@ -23,7 +23,7 @@ const theme = {
   },
 };
 
-const App = () => { 
+const App = () => {
   const Layout = createRootNavigator;
   return (
     <Provider store={store}>

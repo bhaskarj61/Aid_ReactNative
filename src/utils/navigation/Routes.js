@@ -1,5 +1,9 @@
 import React from 'react';
 import {
+  Easing,
+  Animated,
+} from 'react-native';
+import {
   createStackNavigator,
   createSwitchNavigator,
   createAppContainer,
@@ -11,6 +15,30 @@ import Login from 'App/src/screens/auth/Login';
 import Onboarding from 'App/src/screens/Onboarding';
 import Home from 'App/src/screens/home/Home';
 import Drawer from '../../screens/Drawer';
+
+const transitionConfig = () => {
+  return {
+    transitionSpec: {
+      duration: 750,
+      easing: Easing.out(Easing.poly(4)),
+      timing: Animated.timing,
+      useNativeDriver: true,
+    },
+    screenInterpolator: (sceneProps) => {  
+      const { layout, position, scene } = sceneProps;
+
+      const thisSceneIndex = scene.index;
+      const width = layout.initWidth;
+
+      const translateX = position.interpolate({
+        inputRange: [thisSceneIndex - 1, thisSceneIndex],
+        outputRange: [width, 0],
+      });
+
+      return { transform: [{ translateX }] };
+    },
+  };
+};
 
 const LoadingStack = createStackNavigator({
   ONBOARDING: Onboarding,
@@ -45,6 +73,7 @@ const LoggedInStack = createStackNavigator({
 const DrawerStack = createDrawerNavigator({
   HOME: {
     screen: Home,
+    transitionConfig: transitionConfig,
     navigationOptions: {
       drawerLabel: () => null,
     },

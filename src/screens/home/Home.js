@@ -3,9 +3,10 @@ import {
   StyleSheet,
   View,
   Text,
-  TouchableOpacity,
 } from 'react-native';
-import Header from 'App/src/components/Header';
+import {
+  Appbar,
+} from 'react-native-paper';
 import THEME from 'App/src/utils/constants/Theme';
 
 const Home = (props) => {
@@ -15,15 +16,19 @@ const Home = (props) => {
 
   return (
     <View style={styles.container}>
-      <Header
-        leftIcon="ios-menu"
-        onPressLeftImage={() => openDrawer()}
-        title="Home"
-        rightIcon="ios-notifications-outline"
-        onPressRightImage={() => alert('Coming Soon..')}
-        navigation={props.navigation}
-      />
-      <Text style={{textAlign: 'center', width: '100%', fontSize: 22}} onPress={()=>props.navigation.navigate('LOGIN')}> Navigate</Text>
+      <Appbar.Header>
+        <Appbar.Action
+          icon="menu"
+          onPress={openDrawer}
+        />
+        <Appbar.Content
+          title="Home"
+        />
+        <Appbar.Action
+          icon="notifications"
+          onPress={props.navigation.goBack()}
+        />
+      </Appbar.Header>
     </View>
   );
 };
@@ -31,7 +36,6 @@ const Home = (props) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
   },
 });
 
