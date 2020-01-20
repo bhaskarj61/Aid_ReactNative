@@ -2,12 +2,10 @@ import React, { useState } from 'react';
 import {
   StyleSheet,
   View,
-  Text,
 } from 'react-native';
 import {
   Appbar,
 } from 'react-native-paper';
-import THEME from 'App/src/utils/constants/Theme';
 
 const Home = (props) => {
   const openDrawer = () => {
@@ -26,7 +24,7 @@ const Home = (props) => {
         />
         <Appbar.Action
           icon="notifications"
-          onPress={props.navigation.goBack()}
+          onPress={() => alert('Coming Soon..')}
         />
       </Appbar.Header>
     </View>

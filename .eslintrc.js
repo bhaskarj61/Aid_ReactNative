@@ -18,6 +18,7 @@ module.exports ={
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
       "implicit-arrow-linebreak": "off",
       "react-native/no-unused-styles": 1,
+      "no-use-before-define": ["error", { "variables": false }],
       "react-native/split-platform-components": 0,
       "react-native/no-inline-styles": 0,
       "react-native/no-color-literals": 0,

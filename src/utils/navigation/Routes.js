@@ -12,19 +12,22 @@ import {
 
 // importing all screens here
 import Login from 'App/src/screens/auth/Login';
+import SignUp from 'App/src/screens/auth/SignUp';
 import Onboarding from 'App/src/screens/Onboarding';
 import Home from 'App/src/screens/home/Home';
-import Drawer from '../../screens/Drawer';
+import Drawer from 'App/src/screens/Drawer';
+import ForgotPassword from 'App/src/screens/auth/ForgotPassword';
+import ResetPassword from 'App/src/screens/auth/ResetPassword';
 
 const transitionConfig = () => {
   return {
     transitionSpec: {
-      duration: 750,
+      duration: 500,
       easing: Easing.out(Easing.poly(4)),
       timing: Animated.timing,
       useNativeDriver: true,
     },
-    screenInterpolator: (sceneProps) => {  
+    screenInterpolator: (sceneProps) => {
       const { layout, position, scene } = sceneProps;
 
       const thisSceneIndex = scene.index;
@@ -52,12 +55,16 @@ const LoadingStack = createStackNavigator({
 
 const AuthStack = createStackNavigator({
   LOGIN: Login,
+  SIGNUP: SignUp,
+  FORGOT_PASSWORD: ForgotPassword,
+  RESET_PASSWORD: ResetPassword,
 },
 {
   headerMode: 'none',
   navigationOptions: {
     headerVisible: false,
   },
+  transitionConfig: transitionConfig,
 });
 
 const LoggedInStack = createStackNavigator({
@@ -73,7 +80,6 @@ const LoggedInStack = createStackNavigator({
 const DrawerStack = createDrawerNavigator({
   HOME: {
     screen: Home,
-    transitionConfig: transitionConfig,
     navigationOptions: {
       drawerLabel: () => null,
     },
@@ -92,7 +98,7 @@ const createRootNavigator = createAppContainer(
       LoggedInStack: LoggedInStack,
     },
     {
-      initialRouteName: 'LoadingStack',
+      initialRouteName: 'AuthStack',
     },
   ),
 );

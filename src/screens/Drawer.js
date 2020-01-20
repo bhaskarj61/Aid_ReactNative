@@ -4,11 +4,9 @@ import {
   View,
   Text,
   TouchableOpacity,
-  Dimensions,
 } from 'react-native';
 import THEME from 'App/src/utils/constants/Theme';
 
-const { height, width } = Dimensions.get('window');
 
 const Drawer = (props) => {
   return (

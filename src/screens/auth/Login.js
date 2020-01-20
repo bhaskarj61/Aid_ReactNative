@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   StyleSheet,
   View,
   Text,
-  Dimensions,
 } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -12,52 +11,68 @@ import {
   TextInput,
   Caption,
   Button,
-  Appbar,
 } from 'react-native-paper';
 import THEME from 'App/src/utils/constants/Theme';
-
-const { height, width } = Dimensions.get('window');
-const instructions = 'You are just a step away from connecting with people';
-const placeholderPhone = 'Please Enter Your Mobile Number';
-const placeholderPassword = 'Please Enter Your Password';
+import STRINGS from 'App/src/utils/constants/Strings';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import Icon from 'react-native-vector-icons/Ionicons';
+import firebase from 'react-native-firebase';
 
 const Login = (props) => {
-  const [phone, setPhone] = useState(0);
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+
+  const checkValidations = () => {
+    if(emma)
+  }
 
   const onPressLogin = () => {
-    props.navigation.navigate('HOME');
+    if(checkValidations) {
+      firebase
+        .auth()
+        .signInWithEmailAndPassword(email, password)
+        .then((res) => props.navigation.navigate('HOME'))
+      // .then((res) => console.log(res))
+        .catch(error => alert(error));
+    }
+  };
+
+  const onPressSignUp = () => {
+    props.navigation.navigate('SIGNUP');
+  };
+
+  const onPressForgotPassword = () => {
+    props.navigation.navigate('FORGOT_PASSWORD');
   };
 
   return (
-    <View style={{ flex: 1 }}>
-      <Appbar.Header>
-        <Appbar.Content
-          title="Login"
-        />
-      </Appbar.Header>
-
-      <View style={styles.container}>
-        <Caption style={styles.instructions}>{instructions}</Caption>
+    <View style={styles.container}>
+      <View>
+        <View style={{ height: '50%', backgroundColor: THEME.COLORS.THEME_COLOR, justifyContent: 'center', alignItems: 'center' }}>
+          <Icon name="ios-medkit" size={100} color={THEME.COLORS.WHITE} />
+        </View>
+        <Caption style={styles.instructions}>{STRINGS.INSTRUCTIONS.LOGIN_INSTRUCTIONS}</Caption>
 
         <TextInput
-          label={placeholderPhone}
+          label={STRINGS.PLACEHOLDERS.ENTER_EMAIL}
           style={[styles.textInput, { marginBottom: 10 }]}
-          keyboardType="numeric"
+          keyboardType="email-address"
           mode="flat"
           theme={{ colors: { text: THEME.COLORS.BLACK, background: '#ffffff' } }}
           mask="+[00] [000] [000] [000]"
-          value={phone}
-          onChangeText={text => setPhone(text)}
+          value={email}
+          onChangeText={text => setEmail(text)}
         />
         <TextInput
-          label={placeholderPassword}
+          label={STRINGS.PLACEHOLDERS.ENTER_PASSWORD}
           style={styles.textInput}
-          keyboardType="numeric"
+          secureTextEntry
+          keyboardType="default"
           mode="flat"
           theme={{ colors: { text: THEME.COLORS.BLACK, background: '#ffffff' } }}
           mask="+[00] [000] [000] [000]"
-          value={phone}
-          onChangeText={text => setPhone(text)}
+          value={password}
+          onChangeText={text => setPassword(text)}
         />
 
         <Button
@@ -65,13 +80,34 @@ const Login = (props) => {
           onPress={() => onPressLogin()}
           style={styles.button}
         >
-          <Text style={{ color: 'white', fontSize: 24 }}> Login</Text>
+          <Text
+            style={{ color: 'white', fontSize: 24 }}
+          >
+            {STRINGS.BUTTONS.LOGIN}
+          </Text>
         </Button>
-        <Caption style={{ textAlign: 'right', marginRight: 10, color: THEME.COLORS.THEME_COLOR }}>Forgot Password ?</Caption>
+        <Caption
+          style={styles.forgotPasswordText}
+          onPress={() => onPressForgotPassword()}
+        >
+          {STRINGS.BUTTONS.FORGOT_PASSWORD}
+        </Caption>
       </View>
-      <View style={styles.bottomContainer}>
-        <Caption>Don't have an account ?<Caption style={{color: THEME.COLORS.THEME_COLOR}}> Sign Up ?</Caption></Caption>
-      </View>
+      <TouchableOpacity
+        style={styles.bottomContainer}
+        onPress={() => onPressSignUp()}
+      >
+        <Caption>
+          Don't have an account ?
+          <Caption
+            style={{ color: THEME.COLORS.THEME_COLOR }}
+          >
+            {' '}
+            {STRINGS.BUTTONS.SIGNUP}
+            {'?'}
+          </Caption>
+        </Caption>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -87,7 +123,7 @@ const mapDispatchToProps = (dispatch) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 10,
+    justifyContent: 'space-between',
     backgroundColor: THEME.COLORS.WHITE,
   },
   instructions: {
@@ -99,6 +135,11 @@ const styles = StyleSheet.create({
   textInput: {
     marginHorizontal: 10,
     backgroundColor: THEME.COLORS.WHITE,
+  },
+  forgotPasswordText: {
+    textAlign: 'right',
+    marginRight: 10,
+    color: THEME.COLORS.THEME_COLOR,
   },
   button: {
     marginHorizontal: 10,
